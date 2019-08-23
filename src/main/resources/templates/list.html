@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+
+        <th>Content</th>
+        <th>Posted Date</th>
+        <th>Sent By</th>
+
+    </tr>
+    <tr th:each="message : ${messages}">
+
+        <td th:text="${message.content}"></td>
+        <td th:text="${message.postedDate}"></td>
+        <td th:text="${message.sentBy}"></td>
+
+        <td>
+            <button  class="btn btn-primary" type="button" value="Edit"><a th:href="@{/edit/{id}(id=${message.id})}">Edit</a></button>
+            <button class="btn btn-primary" type="submit" value="Update"><a th:href="@{/update/{id}(id=${message.id})}">Update</a></button>
+            <button class="btn btn-primary" type="reset" value="Delete"><a th:href="@{/delete/{id}(id=${message.id})}">Delete</a></button>
+
+        </td>
+
+    </tr>
+
+
+
+
+
+
+</table>
+
+</body>
+</html>
