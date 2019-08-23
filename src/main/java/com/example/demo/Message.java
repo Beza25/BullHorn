@@ -15,6 +15,7 @@ public class Message {
     private String content;
     private String postedDate;
     private String sentBy;
+    private String picture;
 
 
     public long getId() {
@@ -50,4 +51,11 @@ public class Message {
     }
 
 
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
 }

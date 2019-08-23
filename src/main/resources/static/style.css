@@ -1,0 +1,44 @@
+
+
+body{
+    background: url("http://dash.ga.co/assets/anna-bg.png");
+    backgroud-size:cover;
+    background-position: center;
+
+}
+.container{
+    height:800px;
+    width:1000px;
+    background-color: antiquewhite;
+}
+input{
+    border: 10px;
+
+    padding: 8px;
+    border-radius: 12px;
+    border-color: darkslateblue;
+    border-color: black;
+    line-heiht: 24px;
+    color: red;
+    text-align: center;
+
+}
+form{
+    text-aling: center;
+    color: darkred;
+    margin: 0 auto;
+    text-align: center;
+}
+h2{
+    color: aquamarine;
+}
+h3{
+    color: aquamarine;
+}
+h4{
+    color: aquamarine;;
+}
+h5 {
+    color: aquamarine;
+}
+
